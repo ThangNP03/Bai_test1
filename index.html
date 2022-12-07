@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Kiểm Tra</title>
+</head>
+<body>
+<!--<h1>Tính tuổi anh và bố</h1>-->
+
+<!-- <fieldset>-->
+<!--     <legend>-->
+<!--         <div id="farther"></div>-->
+<!--         <div id ="brother"></div>-->
+<!--         <div>-->
+<!--             Nhập vào tuổi em-->
+<!--             <input type="text" id="input">-->
+<!--         </div>-->
+<!--         <button type="button" id ="checks" onclick="checks()">Check</button>-->
+<!--     </legend>-->
+<!-- </fieldset>-->
+<!--<script>-->
+<!--    function checks() {-->
+<!--        let EM = +document.getElementById('input').value-->
+<!--        let ANH = 3 + EM-->
+<!--        let BO = 6 * ANH-->
+
+<!--        document.getElementById('brother').innerHTML = "Đây là số tuổi của anh " + ANH-->
+<!--        document.getElementById('farther').innerHTML = 'Đây là số tuổi của Bố ' + BO-->
+<!--    }-->
+<!--</script>-->
+
+<!--    <h1>Chương trình tính 3 cạnh tam giác</h1>-->
+<!--    <fieldset>-->
+<!--        <legend>-->
+<!--            <h3>Nhập vào cạnh tam giác</h3>-->
+<!--            <div id = "result"></div>-->
+<!--           <label>-->
+<!--               cạnh 1  <input type="text" id ="canh1">-->
+<!--           </label>-->
+<!--            <label>-->
+<!--                cạnh 2  <input type="text" id ="canh2" >-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                cạnh 3  <input type="text" id ="canh3">-->
+<!--            </label>-->
+<!--            <button type="button" onclick="CheckTamGiac()">Check tam giác</button>-->
+
+<!--        </legend>-->
+<!--    </fieldset>-->
+<!--    <script>-->
+<!--        function CheckTamGiac() {-->
+<!--            let canh1 = +document.getElementById('canh1').value-->
+<!--            let canh2 = +document.getElementById('canh2').value-->
+<!--            let canh3 = +document.getElementById('canh3').value-->
+
+<!--            if (canh1 * canh1 + canh2 * canh2 == canh3 * canh3 || canh1 * canh3 + canh3 * canh3 == canh2 * canh2 || canh2 * canh2 + canh3 * canh3 == canh1 * canh3){-->
+<!--                document.getElementById('result').innerHTML = 'Đây là tam giác vuông'-->
+<!--            }else{-->
+<!--                document.getElementById('result').innerHTML= 'Đây không phải tam giác vuông'-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+
+<fieldset>
+    <legend>
+
+        <h1> Bài toán can chi</h1>
+        <div id ="output"></div>
+        <input type="text" id="input">
+        <button type="submit" onclick="check()">Check</button>
+    </legend>
+</fieldset>
+<script>
+   function check() {
+       let INIT = document.getElementById('input').value
+       let CAN = INIT % 10
+       let CHI = INIT % 12
+
+       switch (CAN) {
+           case 0:
+               CAN = "canh";
+               break;
+           case 1:
+               CAN = "Thân";
+               break;
+           case 2:
+               CAN ="Nhâm"
+               break;
+           case 3 :
+               CAN = "Quý"
+               break;
+           case 4:
+               CAN="Giáp"
+               break;
+           case 5:
+               CAN="Ất"
+               break;
+           case 6:
+               CAN="Bính"
+               break;
+           case 7:
+               CAN="Đinh"
+               break;
+           case 8:
+               CAN="Mậu"
+               break;
+           case 9:
+               CAN="Kỳ"
+               break;
+
+       }
+
+       switch (CHI) {
+           case 0:
+               CHI = "Thân";
+               break;
+           case 1:
+               CHI = "Dậu";
+               break;
+           case 2:
+               CHI ="Tuất"
+               break;
+
+           case 3:
+               CHI="Hợi"
+               break;
+           case 4:
+               CHI="Tý"
+               break;
+           case 5:
+               CHI="Sửu"
+               break;
+           case 6:
+               CHI="Dần"
+               break;
+           case 7:
+               CHI="Mão"
+               break;
+
+
+           case 8:
+               CHI="Thìn"
+               break;
+           case 9:
+               CHI="Tỵ"
+               break;
+           case 10:
+               CHI="Ngọ"
+               break;
+           case 11:
+               CHI="Mùi"
+               break;
+       }
+        document.getElementById('output').innerHTML = 'Đây là năm ' + CAN  +  CHI
+   }
+
+</script>
+</body>
+</html>
